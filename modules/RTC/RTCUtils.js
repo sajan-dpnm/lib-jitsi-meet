@@ -565,20 +565,20 @@ function compareAvailableMediaDevices(newDevices) {
                 .map(mediaDeviceInfoToJSON).sort().join(''));
 
     /* eslint-enable newline-per-chained-call */
+}
 
-    /**
-     *
-     * @param info
-     */
-    function mediaDeviceInfoToJSON(info) {
-        return JSON.stringify({
-            kind: info.kind,
-            deviceId: info.deviceId,
-            groupId: info.groupId,
-            label: info.label,
-            facing: info.facing
-        });
-    }
+/**
+ *
+ * @param info
+ */
+function mediaDeviceInfoToJSON(info) {
+    return JSON.stringify({
+        kind: info.kind,
+        deviceId: info.deviceId,
+        groupId: info.groupId,
+        label: info.label,
+        facing: info.facing
+    });
 }
 
 /**
